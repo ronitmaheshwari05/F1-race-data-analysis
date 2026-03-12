@@ -85,7 +85,7 @@ These visualizations help analyze **race pace and driver behaviour during the ra
 
 ## 📓 Notebook
 
-The main analysis notebook:
+The main analysis notebook:F1_Race_Data_Analysis-2.ipynb
 
 ---
 
