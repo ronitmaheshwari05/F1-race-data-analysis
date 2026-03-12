@@ -1,14 +1,24 @@
 # 🏎️ F1 Race Data Analysis
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ronitmaheshwari05/f1-race-data-analysis/blob/main/F1_Race_Data_Analysis-2.ipynb)
+
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python)
 ![FastF1](https://img.shields.io/badge/FastF1-API-red)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+---
+
 ## 📌 Project Overview
 
-This project analyzes **Formula 1 race data** using the **FastF1 API** and Python data science tools.  
-The notebook explores driver performance, lap times, tyre strategies, and telemetry data from a Formula 1 race session.
+This project analyzes **Formula 1 race data** using the **FastF1 API** and Python data science tools.
+
+The notebook explores:
+
+- Driver performance  
+- Lap times  
+- Tyre strategies  
+- Telemetry data  
 
 The goal of this project is to demonstrate **data analysis, visualization, and exploratory data analysis (EDA)** using real-world motorsport data.
 
@@ -16,7 +26,7 @@ The goal of this project is to demonstrate **data analysis, visualization, and e
 
 ## 📊 Project Features
 
-This analysis includes:
+This project includes analysis such as:
 
 - Fastest lap comparison between drivers  
 - Driver consistency analysis using lap time standard deviation  
@@ -36,15 +46,15 @@ These analyses help understand **driver performance and race strategies using da
 - **Matplotlib**
 - **Seaborn**
 - **FastF1 API**
-- **Jupyter / Google Colab**
+- **Jupyter Notebook / Google Colab**
 
 ---
 
 ## 📂 Dataset
 
-Race data is retrieved directly using the **FastF1 API**, which provides official Formula 1 timing and telemetry data.
+Race data is retrieved using the **FastF1 API**, which provides official Formula 1 timing and telemetry data.
 
-The dataset includes information such as:
+The dataset contains information such as:
 
 - Driver name and number  
 - Lap number  
@@ -53,7 +63,7 @@ The dataset includes information such as:
 - Tyre compound  
 - Speed trap data  
 
-This allows detailed analysis of **driver performance and race strategy**.
+This enables detailed analysis of **race performance and driver strategies**.
 
 ---
 
@@ -72,7 +82,7 @@ The notebook follows a typical **data science workflow**:
 
 ## 📈 Visualizations
 
-The project generates several visualizations including:
+The project generates multiple visualizations including:
 
 - Fastest driver lap comparison charts  
 - Driver consistency bar charts  
@@ -85,7 +95,9 @@ These visualizations help analyze **race pace and driver behaviour during the ra
 
 ## 📓 Notebook
 
-The main analysis notebook:F1_Race_Data_Analysis-2.ipynb
+Main analysis notebook: F1_Race_Data_Analysis-2.ipynb
+
+You can also open the notebook directly in **Google Colab** using the badge at the top of this README.
 
 ---
 
@@ -110,7 +122,7 @@ JECRC University, Jaipur
 
 ## ⭐ Acknowledgements
 
-Race data provided by the **FastF1 API**, which provides access to Formula 1 timing and telemetry data.
+Race data provided by the **FastF1 API**, which gives access to official Formula 1 timing and telemetry data.
 
 ---
 
