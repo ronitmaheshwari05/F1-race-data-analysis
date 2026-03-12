@@ -1,6 +1,6 @@
 # 🏎️ F1 Race Data Analysis
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ronitmaheshwari05/f1-race-data-analysis/blob/main/F1_Race_Data_Analysis-2.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ronitmaheshwari05/f1-race-data-analysis/blob/main/F1 Race Data Analysis .ipynb)
 
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python)
 ![FastF1](https://img.shields.io/badge/FastF1-API-red)
