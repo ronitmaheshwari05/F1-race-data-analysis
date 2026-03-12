@@ -2,8 +2,8 @@ name: Run F1 Analysis Notebook
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # Runs every Monday
-  workflow_dispatch:      # Allows manual run from GitHub
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
 
 jobs:
   run-notebook:
@@ -24,4 +24,4 @@ jobs:
 
       - name: Run Notebook
         run: |
-          papermill "F1 Race Data Analysis.ipynb" output.ipynb
+          papermill F1_Race_Data_Analysis_.ipynb output.ipynb
