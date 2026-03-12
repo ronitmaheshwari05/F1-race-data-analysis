@@ -1,0 +1,27 @@
+name: Run F1 Analysis Notebook
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Runs every Monday
+  workflow_dispatch:      # Allows manual run from GitHub
+
+jobs:
+  run-notebook:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          pip install fastf1 pandas numpy matplotlib seaborn jupyter papermill
+
+      - name: Run Notebook
+        run: |
+          papermill "F1 Race Data Analysis.ipynb" output.ipynb
