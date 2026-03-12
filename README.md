@@ -26,6 +26,8 @@ The analysis focuses on extracting insights from:
 - Tyre strategies  
 - Telemetry speed analysis  
 
+Additionally, the project builds a **data-driven performance ranking model** to estimate the best performing driver based on race pace metrics.
+
 ---
 
 # 📓 Notebook
@@ -51,6 +53,7 @@ This project uses the following technologies:
 - Seaborn  
 - FastF1 API  
 - Jupyter Notebook / Google Colab  
+- GitHub Actions (CI Pipeline)
 
 ---
 
@@ -103,27 +106,62 @@ Convert lap time to seconds for analysis.
 laps["LapTime_sec"] = laps["LapTime"].dt.total_seconds()
 ```
 
-### 5️⃣ Fastest Lap Analysis
+### 5️⃣ Feature Engineering
 
-Group data to find the fastest lap per driver.
+Driver performance metrics are calculated including:
 
-### 6️⃣ Visualization
+- Average lap time
+- Fastest lap
+- Lap time consistency
 
-Generate charts such as:
+Drivers with very few laps are filtered out to ensure reliable statistics.
 
-- Fastest lap comparison
-- Driver consistency plots
-- Race pace visualization
+### 6️⃣ Feature Normalization
+
+Metrics are normalized so that different performance indicators can be compared fairly.
+
+### 7️⃣ Driver Performance Model
+
+A weighted **performance score** is calculated using:
+
+- Average lap time  
+- Fastest lap  
+- Lap consistency  
+
+Drivers are ranked based on the final performance score to estimate the **best performing driver in the race**.
+
+### 8️⃣ Visualization
+
+The notebook generates charts such as:
+
+- Fastest lap comparison  
+- Driver consistency analysis  
+- Tyre strategy visualization  
+- Driver performance ranking  
 
 ---
 
 # 📈 Example Visualization
 
-The notebook generates charts like:
+The notebook generates charts such as:
 
 **Fastest Lap Comparison – Australian Grand Prix**
 
-These visualizations help compare driver performance during the race.
+These visualizations help compare driver performance and race pace during the race.
+
+---
+
+# 🤖 Performance Model
+
+The project includes a simple **data-driven driver ranking model**.
+
+The model evaluates driver performance using:
+
+- Average race pace
+- Fastest lap performance
+- Lap time consistency
+
+These metrics are combined into a **weighted performance score** that ranks drivers based on overall race performance.
 
 ---
 
@@ -132,9 +170,10 @@ These visualizations help compare driver performance during the race.
 Possible improvements for this project:
 
 - Lap time prediction using Machine Learning  
-- Multi-race season analysis  
+- Multi-race season analysis across an entire championship  
+- Using qualifying data to improve predictions  
 - Interactive dashboards using Plotly or Streamlit  
-- Race strategy simulation  
+- Race strategy simulation models  
 
 ---
 
