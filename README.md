@@ -8,6 +8,7 @@
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-lightgrey)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green)
 ![License](https://img.shields.io/badge/License-MIT-green)
+![CI](https://github.com/ronitmaheshwari05/f1-race-data-analysis/actions/workflows/run-notebook.yml/badge.svg)
 
 ---
 
