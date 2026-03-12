@@ -1,118 +1,143 @@
 # 🏎️ F1 Race Data Analysis
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ronitmaheshwari05/f1-race-data-analysis/blob/main/F1 Race Data Analysis .ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1ep1UziIRLkcXlDRFoijqOU7eITT-xsvv)
 
 ![Python](https://img.shields.io/badge/Python-Data%20Analysis-blue?logo=python)
 ![FastF1](https://img.shields.io/badge/FastF1-API-red)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-lightgrey)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-green)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 📌 Project Overview
+# 📊 Formula 1 Race Data Analysis with FastF1
 
-This project analyzes **Formula 1 race data** using the **FastF1 API** and Python data science tools.
+This project performs **Formula 1 race data analysis using Python and the FastF1 API**.
 
-The notebook explores:
+The notebook loads official **F1 timing and telemetry data** and performs exploratory data analysis (EDA) to understand race performance and driver behavior.
 
-- Driver performance  
-- Lap times  
+The analysis focuses on extracting insights from:
+
+- Driver lap times  
+- Fastest laps  
+- Race pace comparison  
 - Tyre strategies  
+- Telemetry speed analysis  
+
+---
+
+# 📓 Notebook
+
+Main notebook:
+
+**F1 Race Data Analysis.ipynb**
+
+You can run the notebook directly in **Google Colab**:
+
+👉 Click the **Open in Colab** badge above.
+
+---
+
+# 🧰 Technologies Used
+
+This project uses the following technologies:
+
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- FastF1 API  
+- Jupyter Notebook / Google Colab  
+
+---
+
+# 📂 Data Source
+
+Race data is retrieved using the **FastF1 API**, which provides access to:
+
+- Lap timing data  
 - Telemetry data  
+- Driver information  
+- Session results  
+- Race schedules  
 
-The goal of this project is to demonstrate **data analysis, visualization, and exploratory data analysis (EDA)** using real-world motorsport data.
-
----
-
-## 📊 Project Features
-
-This project includes analysis such as:
-
-- Fastest lap comparison between drivers  
-- Driver consistency analysis using lap time standard deviation  
-- Tyre strategy visualization during the race  
-- Speed telemetry comparison between drivers  
-- Race pace comparison across drivers  
-
-These analyses help understand **driver performance and race strategies using data**.
+The FastF1 library collects data from Formula 1 live timing services and presents it as **Pandas DataFrames for analysis**.
 
 ---
 
-## 🧰 Technologies Used
+# 🔎 Analysis Workflow
 
-- **Python**
-- **Pandas**
-- **NumPy**
-- **Matplotlib**
-- **Seaborn**
-- **FastF1 API**
-- **Jupyter Notebook / Google Colab**
+The notebook follows a standard **data science workflow**:
 
----
+### 1️⃣ Install Required Libraries
 
-## 📂 Dataset
+```python
+!pip install fastf1 pandas numpy matplotlib seaborn
+```
 
-Race data is retrieved using the **FastF1 API**, which provides official Formula 1 timing and telemetry data.
+### 2️⃣ Import Libraries
 
-The dataset contains information such as:
+```python
+import fastf1
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+```
 
-- Driver name and number  
-- Lap number  
-- Lap time  
-- Sector times  
-- Tyre compound  
-- Speed trap data  
+### 3️⃣ Load Race Data
 
-This enables detailed analysis of **race performance and driver strategies**.
+```python
+session = fastf1.get_session(2026, "Australia", "R")
+session.load()
+```
 
----
+### 4️⃣ Data Cleaning
 
-## 🔎 Analysis Workflow
+Convert lap time to seconds for analysis.
 
-The notebook follows a typical **data science workflow**:
+```python
+laps["LapTime_sec"] = laps["LapTime"].dt.total_seconds()
+```
 
-1. Data Loading  
-2. Exploratory Data Analysis (EDA)  
-3. Data Cleaning  
-4. Feature Engineering (LapTime converted to seconds)  
-5. Data Visualization  
-6. Performance Insights  
+### 5️⃣ Fastest Lap Analysis
 
----
+Group data to find the fastest lap per driver.
 
-## 📈 Visualizations
+### 6️⃣ Visualization
 
-The project generates multiple visualizations including:
+Generate charts such as:
 
-- Fastest driver lap comparison charts  
-- Driver consistency bar charts  
-- Tyre strategy scatter plots  
-- Speed telemetry comparison plots  
-
-These visualizations help analyze **race pace and driver behaviour during the race**.
+- Fastest lap comparison
+- Driver consistency plots
+- Race pace visualization
 
 ---
 
-## 📓 Notebook
+# 📈 Example Visualization
 
-Main analysis notebook: F1_Race_Data_Analysis-2.ipynb
+The notebook generates charts like:
 
-You can also open the notebook directly in **Google Colab** using the badge at the top of this README.
+**Fastest Lap Comparison – Australian Grand Prix**
+
+These visualizations help compare driver performance during the race.
 
 ---
 
-## 🚀 Future Improvements
+# 🚀 Future Improvements
 
-Possible future improvements for this project include:
+Possible improvements for this project:
 
-- Lap time prediction using machine learning  
-- Race strategy simulation  
-- Interactive dashboards  
+- Lap time prediction using Machine Learning  
 - Multi-race season analysis  
+- Interactive dashboards using Plotly or Streamlit  
+- Race strategy simulation  
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Ronit Maheshwari**  
 BTech CSE (AI & ML)  
@@ -120,12 +145,12 @@ JECRC University, Jaipur
 
 ---
 
-## ⭐ Acknowledgements
+# ⭐ Acknowledgements
 
-Race data provided by the **FastF1 API**, which gives access to official Formula 1 timing and telemetry data.
+Race data is provided by the **FastF1 API**, which gives access to official Formula 1 telemetry and timing data.
 
 ---
 
-## 📜 License
+# 📜 License
 
 This project is licensed under the **MIT License**.
