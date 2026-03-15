@@ -24,7 +24,7 @@ The analysis focuses on extracting insights from:
 - Fastest laps  
 - Race pace comparison  
 - Tyre strategies  
-- Telemetry speed analysis 
+- Telemetry speed analysis  
 
 Additionally, the project builds a **data-driven performance ranking model** to estimate the best performing driver based on race pace metrics.
 
@@ -36,9 +36,9 @@ Main notebook:
 
 **F1 Race Data Analysis.ipynb**
 
-You can run the notebook directly in **Google Colab**:
+You can run the notebook directly in **Google Colab**.
 
-👉 Click the **Open in Colab** badge above.
+Click the **Open in Colab** badge above.
 
 ---
 
@@ -73,7 +73,7 @@ The FastF1 library collects data from Formula 1 live timing services and present
 
 # 🔎 Analysis Workflow
 
-The notebook follows a standard **data science workflow**:
+The notebook follows a standard **data science workflow**.
 
 ### 1️⃣ Install Required Libraries
 
@@ -108,17 +108,17 @@ laps["LapTime_sec"] = laps["LapTime"].dt.total_seconds()
 
 ### 5️⃣ Feature Engineering
 
-Driver performance metrics are calculated including:
+Driver performance metrics calculated include:
 
-- Average lap time
-- Fastest lap
-- Lap time consistency
+- Average lap time  
+- Fastest lap  
+- Lap time consistency  
 
 Drivers with very few laps are filtered out to ensure reliable statistics.
 
 ### 6️⃣ Feature Normalization
 
-Metrics are normalized so that different performance indicators can be compared fairly.
+Metrics are normalized so different performance indicators can be compared fairly.
 
 ### 7️⃣ Driver Performance Model
 
@@ -128,7 +128,7 @@ A weighted **performance score** is calculated using:
 - Fastest lap  
 - Lap consistency  
 
-Drivers are ranked based on the final performance score to estimate the **best performing driver in the race**.
+Drivers are ranked based on the final score to estimate the **best performing driver in the race**.
 
 ### 8️⃣ Visualization
 
@@ -147,21 +147,21 @@ The notebook generates charts such as:
 
 **Fastest Lap Comparison – Australian Grand Prix**
 
-These visualizations help compare driver performance and race pace during the race.
+These visualizations help compare driver performance and race pace.
 
 ---
 
 # 🤖 Performance Model
 
-The project includes a simple **data-driven driver ranking model**.
+The project includes a **data-driven driver ranking model**.
 
 The model evaluates driver performance using:
 
-- Average race pace
-- Fastest lap performance
-- Lap time consistency
+- Average race pace  
+- Fastest lap performance  
+- Lap time consistency  
 
-These metrics are combined into a **weighted performance score** that ranks drivers based on overall race performance.
+These metrics are combined into a **weighted performance score** ranking drivers by overall race performance.
 
 ---
 
@@ -170,7 +170,7 @@ These metrics are combined into a **weighted performance score** that ranks driv
 Possible improvements for this project:
 
 - Lap time prediction using Machine Learning  
-- Multi-race season analysis across an entire championship  
+- Multi-race season analysis across a championship  
 - Using qualifying data to improve predictions  
 - Interactive dashboards using Plotly or Streamlit  
 - Race strategy simulation models  
@@ -183,47 +183,88 @@ Possible improvements for this project:
 BTech CSE (AI & ML)  
 JECRC University, Jaipur  
 
----
-
-# ⭐ Acknowledgements
-
-Race data is provided by the **FastF1 API**, which gives access to official Formula 1 telemetry and timing data.
-
+GitHub:  
+https://github.com/ronitmaheshwari05
 
 ---
 
 # ⭐ Support the Project
 
-If you found this project useful or interesting, please consider giving it a **star ⭐ on GitHub**.  
-It helps others discover the project and motivates further improvements.
+If you found this project useful, please consider giving it a **⭐ star on GitHub**.
 
-⭐ **Star the repository to support the project!**
+Stars help the project reach more developers and data science learners.
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-If you'd like to improve this project, feel free to contribute by:
+If you'd like to improve the project you can:
 
-- Fixing bugs
-- Improving visualizations
-- Adding new analysis
-- Improving documentation
-- Adding machine learning models
+- Fix bugs  
+- Improve visualizations  
+- Add new analysis  
+- Improve documentation  
+- Extend the performance model  
 
 ### Steps to contribute
 
-1. **Fork the repository**
-
-2. **Create a new branch**
+1. Fork the repository  
+2. Create a new branch
 
 ```bash
 git checkout -b feature-improvement
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new analysis feature"
+```
+
+4. Push the branch
+
+```bash
+git push origin feature-improvement
+```
+
+5. Open a Pull Request
+
+---
+
+# 🐞 Issues
+
+If you find a bug or have suggestions for improvements, please open an **Issue**.
+
+You can report:
+
+- Bugs  
+- Data errors  
+- Visualization improvements  
+- Feature requests  
 
 ---
 
 # 📜 License
 
-This project is licensed under the **MIT License**.
+MIT License
+
+Copyright (c) 2026 Ronit Maheshwari
+
+Permission is hereby granted, free of charge, to any person obtaining a copy  
+of this software and associated documentation files (the "Software"), to deal  
+in the Software without restriction, including without limitation the rights  
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell  
+copies of the Software, and to permit persons to whom the Software is furnished  
+to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all  
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,  
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE  
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER  
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,  
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
