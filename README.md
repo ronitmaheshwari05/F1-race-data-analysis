@@ -189,6 +189,39 @@ JECRC University, Jaipur
 
 Race data is provided by the **FastF1 API**, which gives access to official Formula 1 telemetry and timing data.
 
+
+---
+
+# ⭐ Support the Project
+
+If you found this project useful or interesting, please consider giving it a **star ⭐ on GitHub**.  
+It helps others discover the project and motivates further improvements.
+
+⭐ **Star the repository to support the project!**
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you'd like to improve this project, feel free to contribute by:
+
+- Fixing bugs
+- Improving visualizations
+- Adding new analysis
+- Improving documentation
+- Adding machine learning models
+
+### Steps to contribute
+
+1. **Fork the repository**
+
+2. **Create a new branch**
+
+```bash
+git checkout -b feature-improvement
+
 ---
 
 # 📜 License
