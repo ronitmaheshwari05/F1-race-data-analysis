@@ -52,7 +52,7 @@ This project uses the following technologies:
 - Matplotlib  
 - Seaborn  
 - FastF1 API  
-- Jupyter Notebook / Google Colab  
+- Google Colab  
 - GitHub Actions (CI Pipeline)
 
 ---
