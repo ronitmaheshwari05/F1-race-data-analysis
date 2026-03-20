@@ -20,7 +20,7 @@ The notebook loads official **F1 timing and telemetry data** and performs explor
 
 The analysis focuses on extracting insights from:
 
-- Driver lap times  
+- Driver lap times 
 - Fastest laps  
 - Race pace comparison  
 - Tyre strategies  
