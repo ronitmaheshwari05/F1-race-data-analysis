@@ -24,7 +24,7 @@ The analysis focuses on extracting insights from:
 - Fastest laps  
 - Race pace comparison  
 - Tyre strategies  
-- Telemetry speed analysis  
+- Telemetry speed analysis 
 
 Additionally, the project builds a **data-driven performance ranking model** to estimate the best performing driver based on race pace metrics.
 
