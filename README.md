@@ -12,7 +12,7 @@
 
 ---
 
-# 📊 Formula 1 Race Data Analysis with FastF1
+# 📊 Formula 1 Race Data Analysis with FastF1 API
 
 This project performs **Formula 1 race data analysis using Python and the FastF1 API**.
 
