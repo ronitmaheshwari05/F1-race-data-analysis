@@ -242,7 +242,7 @@ You can report:
 - Bugs  
 - Data errors  
 - Visualization improvements  
-- Feature requests  
+- Feature request  
 
 ---
 
